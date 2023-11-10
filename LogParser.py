@@ -1,5 +1,5 @@
 """
-LogReport.py
+LogParser.py
 
 A program that parses all logs in a given path, and outputs results (into csv files) for the following:
 - Machine (system) information
