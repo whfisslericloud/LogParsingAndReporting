@@ -100,14 +100,25 @@ class LogCreator:
             else:
                 logPath = "Logs/"   
                 
-            logging.basicConfig(filename=logPath + logName, encoding='utf-8', level=logging.DEBUG, format='[%(asctime)s.%(msecs)03d] - %(levelname)s - %(message)s', datefmt='%d%b%y_%H:%M:%S')
+            logging.basicConfig(filename=logPath + logName, 
+                                encoding='utf-8', 
+                                level=logging.DEBUG, 
+                                format='[%(asctime)s.%(msecs)03d] - %(levelname)s - %(message)s', 
+                                datefmt='%d%b%y_%H:%M:%S')
                  
         except Exception as e:
                 logging.exception(e)
         
     def getSystemInfo(self):
         try: 
-            logging.info("\n Python Version: " + sys.version + "\n User: " + socket.gethostname() + "\n Operating System: " + platform.platform() + "\n CPU: " + platform.processor() + " " + str(psutil.cpu_count(logical=False)) + " Physical Cores " + str(psutil.cpu_count(logical=True)) + " Logical Cores \n Total Virtual Memory: " + str(round(psutil.virtual_memory().total/1024.0**2)) + "MB")          
+            logging.info("\n System Informtation - Python Version: " + sys.version + 
+                         "\n System Informtation - User: " + socket.gethostname() + 
+                         "\n System Informtation - Operating System: " + platform.platform() + 
+                         "\n System Informtation - CPU: " + platform.processor() + 
+                         "\n System Informtation - CPU Physical Cores: " + str(psutil.cpu_count(logical=False)) + 
+                         "\n System Informtation - CPU Logical Cores: " + str(psutil.cpu_count(logical=True)) + 
+                         "\n System Informtation - Total Virtual Memory: " + str(round(psutil.virtual_memory().total/1024.0**2)) + "MiB"
+                         "\n System Informtation - Available Virtual Memory: " + str(round(psutil.virtual_memory().available/1024.0**2)) + "MiB")          
         except Exception as e:
             logging.exception(e)
             
