@@ -13,9 +13,10 @@ Generates logging for:
 - Application memory consumption
 - "is not defined" logic error
 
-Identified areas for future extenstion:
+Identified areas for future improvements:
 - Allow users to pass arguments for how many logs to create
 - Allow users to pass arguments for preferred output directory
+- Refactor for improved performance and algorithm design
 
 """ 
 import platform, logging, random, psutil, os, datetime, time, threading, socket, sys
@@ -70,16 +71,23 @@ class LogCreator:
     chooseLoggingType(choice:int)
         Assess parameter value and decides which log print method to use, as the result of a modulus operation.
         Message type likelihood is ordered as (most likely -> least likely): Log Spam, Memory Usage, Hitch, Error.
+        :param choice: RNG int in range of 1-100
+        :type choice: int
 
     """
     
     def __init__(self) -> None:
+        """Constructor.
+        Initalizes startTime attribute.
+        Initalizes seed for RNG."""
         self.startTime = time.time() 
         random.seed() #set seed for RNG            
 
     def createLogFile(self):
-        try: 
-            
+        """Creates log file with time stamped naming convention. 
+        Configures logging encoding format, level, and statement format.
+        Create "Logs" directory if one does not exist."""
+        try:             
             timestamp = str(datetime.datetime.now())
             timestamp = timestamp.replace(" ","_")
             timestamp = timestamp.replace(":",".")
@@ -110,6 +118,7 @@ class LogCreator:
                 logging.exception(e)
         
     def getSystemInfo(self):
+        """Writes Python, OS, CPU and memory specs to the log file."""
         try: 
             logging.info("\n System Informtation - Python Version: " + sys.version + 
                          "\n System Informtation - User: " + socket.gethostname() + 
@@ -123,6 +132,8 @@ class LogCreator:
             logging.exception(e)
             
     def populateLog(self):
+        """Iterates 10K times to populate the log file, based on log choice passed into chooseLoggingType(choice).
+        Prints iteration progress to the terminal window."""
         for prints in range(10000): #print 10K lines (error will increase actual line count due to callstack)
             try:
                 self.chooseLoggingType(random.randint(1,100))
@@ -134,6 +145,7 @@ class LogCreator:
                 break  
             
     def printFinalStats(self):
+        """Prints to terminal window, and writes to the log file, the total execution time of the application."""
         try: 
             elapsedTime = str(round(time.time()-self.startTime,2))
             print("Total Execution Time: " + elapsedTime + " seconds")
@@ -142,24 +154,30 @@ class LogCreator:
                 logging.exception(e)    
       
     def printMemoryUsage(self):
+        """Writes application's current memory footprint, at the time (since start) of the call, to the log file."""
         try:
             logging.info("Current virtual memory footprint: " + str(round(psutil.Process(os.getpid()).memory_info().rss /   1024**2,2)) + " MiB at run time: " + str(round(time.time()-self.startTime,5)))
         except Exception as e:
             logging.exception(e)
     
     def printLogSpam(self):
+        """Writes an arbitrary message to the log file."""
         try: 
             logging.info("this is an arbitrary log") 
         except Exception as e:
             logging.exception(e)  
         
     def printHitchLog(self):
+        """Writes an arbitrary hitch message to the log file. 
+        Thread info is gotten from the application.
+        Duration information is arbitrary and is the result of RNG."""
         try:
             logging.warning("Hitch reported on thread: [" + str(threading.current_thread().name) + "] with a duration of: " + str(round(random.uniform(30.0, 3000.0),2)) + "ms")
         except Exception as e:
             logging.exception(e)
         
     def printErrorLog(self):
+        """Forces an undefined variable error, and writes the messages and callstack to the log file."""
         try: 
             #force an error
             value = x * 1
@@ -167,6 +185,8 @@ class LogCreator:
             logging.exception(e)
      
     def chooseLoggingType(self,choice):
+        """Assess parameter value and decides which log print method to use, as the result of a modulus operation.
+        Message type likelihood is ordered as (most likely -> least likely): Log Spam, Memory Usage, Hitch, Error."""
         try: 
             # low chance to print hitch or error
             # higher chance to print memory usage (future, should do this on a tick instead of RNG)
