@@ -120,14 +120,14 @@ class LogCreator:
     def getSystemInfo(self):
         """Writes Python, OS, CPU and memory specs to the log file."""
         try: 
-            logging.info("\n System Informtation - Python Version: " + sys.version + 
-                         "\n System Informtation - User: " + socket.gethostname() + 
-                         "\n System Informtation - Operating System: " + platform.platform() + 
-                         "\n System Informtation - CPU: " + platform.processor() + 
-                         "\n System Informtation - CPU Physical Cores: " + str(psutil.cpu_count(logical=False)) + 
-                         "\n System Informtation - CPU Logical Cores: " + str(psutil.cpu_count(logical=True)) + 
-                         "\n System Informtation - Total Virtual Memory: " + str(round(psutil.virtual_memory().total/1024.0**2)) + "MiB"
-                         "\n System Informtation - Available Virtual Memory: " + str(round(psutil.virtual_memory().available/1024.0**2)) + "MiB")          
+            logging.info("***System Informtation*** \n Python Version: " + sys.version + 
+                         "\n User: " + socket.gethostname() + 
+                         "\n Operating System: " + platform.platform() + 
+                         "\n CPU: " + platform.processor() + 
+                         "\n CPU Physical Cores: " + str(psutil.cpu_count(logical=False)) + 
+                         "\n CPU Logical Cores: " + str(psutil.cpu_count(logical=True)) + 
+                         "\n Total Virtual Memory: " + str(round(psutil.virtual_memory().total/1024.0**2)) + "MiB"
+                         "\n Available Virtual Memory: " + str(round(psutil.virtual_memory().available/1024.0**2)) + "MiB \n ***System Informtation***")          
         except Exception as e:
             logging.exception(e)
             
