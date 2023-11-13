@@ -71,7 +71,7 @@ class LogCreator:
     chooseLoggingType(choice:int)
         Assess parameter value and decides which log print method to use, as the result of a modulus operation.
         Message type likelihood is ordered as (most likely -> least likely): Log Spam, Memory Usage, Hitch, Error.
-        :param choice: RNG int in range of 1-100
+        :param choice: RNG int in range of 1-1000
         :type choice: int
 
     """
@@ -136,7 +136,7 @@ class LogCreator:
         Prints iteration progress to the terminal window."""
         for prints in range(10000): #print 10K lines (error will increase actual line count due to callstack)
             try:
-                self.chooseLoggingType(random.randint(1,100))
+                self.chooseLoggingType(random.randint(1,1000))
                 if prints % 99 == 0: # print terminal update every 100th line printed to log, as the cls/clear functions are very expensive. Clearing terminal each iteration increases execution time >10x 
                     os.system('cls' if os.name == 'nt' else 'clear') 
                     print("Printing lines: " + str(round((prints/100)+.01,2)) + "%") 
@@ -156,7 +156,7 @@ class LogCreator:
     def printMemoryUsage(self):
         """Writes application's current memory footprint, at the time (since start) of the call, to the log file."""
         try:
-            logging.info("Current virtual memory footprint: " + str(round(psutil.Process(os.getpid()).memory_info().rss /   1024**2,2)) + " MiB at run time: " + str(round(time.time()-self.startTime,5)))
+            logging.info("Current virtual memory footprint: " + str(round(psutil.Process(os.getpid()).memory_info().rss/1024**2,2)) + " MiB at run time: " + str(round(time.time()-self.startTime,5)))
         except Exception as e:
             logging.exception(e)
     
@@ -179,8 +179,13 @@ class LogCreator:
     def printErrorLog(self):
         """Forces an undefined variable error, and writes the messages and callstack to the log file."""
         try: 
-            #force an error
-            value = x * 1
+            if(random.randint(0,4) % 2 == 0):
+                # force a naming error
+                value = x * 1
+            else:
+                #force a type error
+                intError = 12345
+                logging.info("This is a string + int concatenation error " + intError)
         except Exception as e:
             logging.exception(e)
      
@@ -193,9 +198,9 @@ class LogCreator:
             # highest chance to print log spam
             if choice % 7 == 0: 
                 self.printMemoryUsage()
-            elif choice % 25 == 0: 
+            elif choice % 99 == 0: 
                 self.printHitchLog()
-            elif choice % 99 == 0:
+            elif choice % 333 == 0:
                 self.printErrorLog()
             else:
                 self.printLogSpam()
