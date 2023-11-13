@@ -11,3 +11,4 @@ See doc strings in files to understand more about what each script handles.
 View "SampleData" folder for:
 - log files created by CreateArbitraryLog.py
 - error, hitch, memory csv reports parsed by LogParser.py
+- run time log for LogParser.py while creating the csv reports 
