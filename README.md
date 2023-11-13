@@ -7,3 +7,7 @@ Develop a series of tools to solve for:
 - Develop means of reporting/visualizing instances and trends from the data metrics
 
 See doc strings in files to understand more about what each script handles.
+
+View "SampleData" folder for:
+- log files created by CreateArbitraryLog.py
+- error, hitch, memory csv reports parsed by LogParser.py
