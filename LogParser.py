@@ -35,7 +35,7 @@ def createLogFile():
         timestamp = timestamp.replace(" ","_")
         timestamp = timestamp.replace(":",".")
         logPath = '' 
-        logName = "LogReport_"+timestamp+".log"          
+        logName = "LogParser_"+timestamp+".log"          
         fileDupeNum = 0 
         
         if not os.path.exists("Logs"):
