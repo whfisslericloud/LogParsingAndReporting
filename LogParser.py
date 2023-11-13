@@ -101,7 +101,6 @@ class LogParser:
         hitchList, memoryList, errorList, logSpamList, systemInfoList, hitchCriteria, memoryCriteria, 
         systemInfoCriteria, logSpamCriteria, startTime.
     
-    
     printFinalStats()
         Prints to terminal window, and writes to the log file, the total execution time of the application.
         
