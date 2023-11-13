@@ -1,0 +1,1129 @@
+Log Name,Log Line,Error Type,Error Message
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,202,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,261,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,881,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,1561,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,1721,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,2232,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,2384,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,2840,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,2981,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,3096,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,4566,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,5325,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,5907,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,6089,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,6183,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,6260,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,6319,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,6471,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,6632,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,7080,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,7420,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,7553,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,7705,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,7780,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,7941,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,8119,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,8304,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,8749,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,9188,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.11.894249.log,9567,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,94,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,406,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,512,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,798,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,1032,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,1070,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,2200,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,2655,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,3249,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,3591,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,3736,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,4626,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,4748,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,4999,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,5102,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,5491,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,5819,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,6305,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,6360,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,6537,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,6580,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,6982,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,7002,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,7522,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,7534,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,7675,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,8043,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,8413,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,9543,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,9641,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,9771,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.09.476278.log,10009,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,935,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,987,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,1578,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,1848,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,2446,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,2720,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,2863,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,3049,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,3222,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,3628,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,3930,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,4158,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,4214,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,4443,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,4947,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,5424,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,5453,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,5548,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,5702,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,5993,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,7319,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,7331,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,7783,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,7856,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,8147,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,8782,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,8799,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,8903,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,8970,NameError,"ERROR - name 'x' is not defined
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 184, in printErrorLog
+
+    value = x * 1
+
+            ^
+
+NameError: name 'x' is not defined
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,9776,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,9930,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
+CreateArbitraryLog_2023-11-13_14.10.07.338646.log,10019,TypeError,"ERROR - can only concatenate str (not ""int"") to str
+
+Traceback (most recent call last):
+
+  File ""/Users/dert/Documents/PythonScripts/LogParsingAndReporting/CreateArbitraryLog.py"", line 188, in printErrorLog
+
+    logging.info(""This is a string + int concatenation error "" + intError)
+
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+
+TypeError: can only concatenate str (not ""int"") to str
+"
