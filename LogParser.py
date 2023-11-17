@@ -26,11 +26,14 @@ Identified areas for future extenstion:
 
 import logging, os, datetime, platform, glob, re, csv, time
 
+startTime = time.time()
+
 def createLogFile():
     """Creates log file with time stamped naming convention. 
         Configures logging encoding format, level, and statement format.
         Create "Logs" directory if one does not exist."""
-    try:             
+    try:  
+        createLogFileTime = round(time.time(),5)          
         timestamp = str(datetime.datetime.now())
         timestamp = timestamp.replace(" ","_")
         timestamp = timestamp.replace(":",".")
@@ -55,9 +58,14 @@ def createLogFile():
                             encoding='utf-8', 
                             level=logging.DEBUG, 
                             format='[%(asctime)s.%(msecs)03d] - %(levelname)s - %(message)s', 
-                            datefmt='%d%b%y_%H:%M:%S')                 
+                            datefmt='%d%b%y_%H:%M:%S')
+         
+        createLogFileTime = round(time.time()-createLogFileTime,5)
+        logging.info("Time to execute createLogFile: " + str(createLogFileTime) + " seconds")                
     except Exception as e:
-                logging.exception(e)
+        createLogFileTime = round(time.time()-createLogFileTime,5)
+        logging.info("Time to execute createLogFile: " + str(createLogFileTime) + " seconds")
+        logging.exception(e)                
 
 class LogParser:
     """
@@ -90,8 +98,6 @@ class LogParser:
         Defaults to "System Information - ".
     logSpamCriteria : int 
         Defaults to 100 (represents number of times encountered).
-    startTime : float
-        Stores time stamp of the time the application initialized.
         
     Methods
     -------
@@ -131,13 +137,12 @@ class LogParser:
         self.memoryCriteria = "memory footprint"
         self.errorCriteria = "ERROR"
         self.systemInfoCriteria = "System Information - "
-        self.logSpamCriteria = 100
-        self.startTime = time.time() 
+        self.logSpamCriteria = 100 
     
     def printFinalStats(self):
         """Prints to terminal window, and writes to the log file, the total execution time of the application."""
         try: 
-            elapsedTime = str(round(time.time()-self.startTime,2))
+            elapsedTime = str(round(time.time()-startTime,2))
             print("Total Execution Time: " + elapsedTime + " seconds")
             logging.info(f"Lines matching: \n Hitch Criteria: " + str(len(self.hitchList)) + 
                          "\n Memory Criteria: " + str(len(self.memoryList)) + 
@@ -145,7 +150,7 @@ class LogParser:
                          "\n Log Spam Criteria:  " + str(len(self.logSpamList)))
             logging.info("Total Execution Time: " + elapsedTime + " seconds")
         except Exception as e:
-                logging.exception(e)
+            logging.exception(e)
 
     def cacheLogs(self) -> list:
         """Verifies working directory for files to be processed.
@@ -154,6 +159,7 @@ class LogParser:
         :returns: logCache - list of strings representing .log file names found.
         :rtype: list """
         try:
+            cacheLogsTime = time.time()
             logCache = []
             logging.info("Current working directory is: " + os.getcwd())
             
@@ -166,11 +172,17 @@ class LogParser:
                     index = 0
                     logCache.append(file) 
                     logging.info("Found Log: " + file)
-                    index += 1        
-        except Exception as e:
-            logging.exception(e)
+                    index += 1
+                    
+            cacheLogsTime = round(time.time()-cacheLogsTime,5)
+            logging.info("Time to execute createLogFile: " + str(cacheLogsTime) + "ms")
             
-        return logCache
+            return logCache
+        
+        except Exception as e:
+            cacheLogsTime = round(time.time()-cacheLogsTime,5)
+            logging.info("Time to execute cacheLogs: " + str(cacheLogsTime) + "ms")
+            logging.exception(e)
 
     def iterateLogs(self,logCache):
         """Verifies logCache has contents prior to processing.
@@ -179,7 +191,9 @@ class LogParser:
         
         :param logCache: list of strings representing .log file names cached by cacheLogs().
         :type logCache: list"""
-        try:           
+        try:
+            iterateLogsTime = time.time()
+                       
             if len(logCache) != 0: # check to see if cache is empty 
                                 
                 logCount = 0 # to track how many logs have been iterated through   
@@ -222,9 +236,24 @@ class LogParser:
                             lineNumber += 1 # increment line number before evaluating next log line
                     logCount += 1 # increment number of files processed before evaluating next log file
             else:
-                logging.warning("Log Cache is Empty!")                
+                logging.warning("Log Cache is Empty!")
+                
+            iterateLogsTime = round(time.time()-iterateLogsTime,5)
+            logging.info("Time to execute iterateLogs: " + str(iterateLogsTime) + " seconds")
         except Exception as e:
+            cacheLogsTime = round(time.time()-cacheLogsTime,5)
+            logging.info("Time to execute iterateLogs: " + str(iterateLogsTime) + " seconds")
             logging.exception(e)
+    
+    # WIP placeholder 
+    # def sortForLogSpam(self, logCache):
+    #     try: 
+    #         while True:
+    #             for log in range(len(logCache)):
+    #                 tempLogCache = []
+                    
+    # #     except Exception as e:
+    #             logging.exception(e)
             
 class CSVWriter:
     """
@@ -273,38 +302,47 @@ class CSVWriter:
         :type fileName: str
         :returns: fileName - either fileName appended with (n) duplicate value, or same value that was initially passed
         :rtype: str"""
-        try:   
+        try:
+            
+            checkForExistingFileTime = time.time()   
             fileDupeNum = 0 
             
             if fileName == "HitchReport.csv":                        
                 while os.path.isfile(fileName):
+                    logging.info(fileName + " already exists")
                     fileDupeNum += 1
                     fileName = "HitchReport("+str(fileDupeNum)+").csv"
-                    logging.info(fileName + "already exists")
             elif fileName == "MemoryReport.csv":
                 while os.path.isfile(fileName):
+                    logging.info(fileName + " already exists")
                     fileDupeNum += 1
                     fileName = "MemoryReport("+str(fileDupeNum)+").csv"
-                    logging.info(fileName + "already exists")
             elif fileName == "ErrorReport.csv":
                 while os.path.isfile(fileName):
+                    logging.info(fileName + " already exists")
                     fileDupeNum += 1
                     fileName = "ErrorReport("+str(fileDupeNum)+").csv"
-                    logging.info(fileName + "already exists")
             else:
                 print(fileName + " is and invalid file name for csv creation")
                 logging.error(fileName + " is and invalid file name for csv creation")
                                     
             logging.info("Creating CSV file: " + fileName)
+            checkForExistingFileTime = round(time.time()-checkForExistingFileTime,5)
+            logging.info("Time to execute checkForExistingFile: " + str(checkForExistingFileTime) + " seconds")
             return fileName
+
         except Exception as e:
+            checkForExistingFileTime = round(time.time()-checkForExistingFileTime,5)
+            logging.info("Time to execute checkForExistingFile: " + str(checkForExistingFileTime) + " seconds")
             logging.exception(e)
 
     def writeMemoryFootprintToCSV(self, memoryList):
         """Creates .csv file, applies header, iterates through each line in memoryList parsing for:
         log file name, the line number the match occured in the respective log file, the footprint size, 
         and at what run time the record occured, then applies the stats to the .csv's row."""
-        try: 
+        try:
+            writeMemoryFootprintToCSVTime = time.time()
+             
             if len(memoryList) != 0:
                  with open(self.checkForExistingFile("MemoryReport.csv"), 'w', newline='', encoding='utf-8') as csvfile:
                     writer = csv.writer(csvfile, dialect='excel')
@@ -317,11 +355,15 @@ class CSVWriter:
                         footprint = (re.search(r"footprint:\s(\d+\.\d+)",memoryList[line])).group().strip("footprint: ")               
                         timeRecorded = (re.search(r"run time:\s(\d+\.\d+)",memoryList[line])).group().strip("run time: ")              
                         row = [logName, lineNumber, footprint, timeRecorded]
-                        writer.writerow(row) 
+                        writer.writerow(row)
             else:
-                logging.warning("Failure to write Memory Report. Memory List is empty")            
-                        
+                logging.warning("Failure to write Memory Report. Memory List is empty") 
+            
+            writeMemoryFootprintToCSVTime = round(time.time()-writeMemoryFootprintToCSVTime,5)
+            logging.info("Time to execute writeMemoryFootprintToCSV: " + str(writeMemoryFootprintToCSVTime) + " seconds")                        
         except Exception as e:
+            writeMemoryFootprintToCSVTime = round(time.time()-writeMemoryFootprintToCSVTime,5)
+            logging.info("Time to execute writeMemoryFootprintToCSV: " + str(writeMemoryFootprintToCSVTime) + " seconds")
             logging.exception(e)                   
             
     def writeHitchToCSV(self, hitchList):
@@ -332,6 +374,8 @@ class CSVWriter:
         :param hitchList: list of log lines matched to memoryCriteria
         :type hitchList: list"""        
         try: 
+            writeHitchToCSVTime = time.time()
+            
             if len(hitchList) != 0:                
                 with open(self.checkForExistingFile("HitchReport.csv"), 'w', newline='', encoding='utf-8') as csvfile:
                     writer = csv.writer(csvfile, dialect='excel')
@@ -344,10 +388,15 @@ class CSVWriter:
                         hitchDuration = (re.search(r"duration of:\s(\d+\.\d+)", hitchList[line])).group().strip("duration of: ") #duration require log name to be stripped so that only one set of decimal numbers exist              
                         threadName = (re.search(r'thread:\s\[(.+?)\]', hitchList[line])).group().strip("thread: ").strip("[]")          
                         row = [logName, lineNumber, threadName, hitchDuration]
-                        writer.writerow(row) 
+                        writer.writerow(row)
             else:
-                logging.warning("Failure to write Hitch Report.csv: Hitch List is empty")
+                logging.warning("Failure to write Hitch Report: Hitch List is empty")
+            
+            writeHitchToCSVTime = round(time.time()-writeHitchToCSVTime,5)
+            logging.info("Time to execute writeHitchToCSV: " + str(writeHitchToCSVTime) + " seconds")
         except Exception as e:
+            writeHitchToCSVTime = round(time.time()-writeHitchToCSVTime,5)
+            logging.info("Time to execute writeHitchToCSV: " + str(writeHitchToCSVTime) + " seconds")
             logging.exception(e)
         
     def writeErrorsToCSV(self, errorList):
@@ -358,6 +407,8 @@ class CSVWriter:
         :param hitchList: list of log lines matched to memoryCriteria
         :type hitchList: list"""        
         try: 
+            writeErrorsToCSVTime = time.time()
+            
             if len(errorList) != 0:                
                 with open(self.checkForExistingFile("ErrorReport.csv"), 'w', newline='', encoding='utf-8') as csvfile:
                     writer = csv.writer(csvfile, dialect='excel')
@@ -372,11 +423,17 @@ class CSVWriter:
                         errorType = None                  
                         errorType = (re.search(r'[$\w]+(?=:\s)', errorMessage)).group()
                         row = [logName, lineNumber, errorType, errorMessage]
-                        writer.writerow(row) 
+                        writer.writerow(row)
             else:
-                logging.warning("Failure to write ErrorReport.csv: Error List is empty")
+                logging.warning("Failure to write Error Report: Error List is empty")
+
+            writeErrorsToCSVTime = round(time.time()-writeErrorsToCSVTime,5)
+            logging.info("Time to execute writeErrorsToCSV: " + str(writeErrorsToCSVTime) + " seconds")
         except Exception as e:
+            writeErrorsToCSVTime = round(time.time()-writeErrorsToCSVTime,5)
+            logging.info("Time to execute writeErrorsToCSV: " + str(writeErrorsToCSVTime) + " seconds")
             logging.exception(e)
+    
     
     # WIP placeholder         
     # def writeLogSpamToCSV():
